@@ -14,17 +14,15 @@
     <maven.compiler.target>17</maven.compiler.target>
   </properties>
 
-         
-<dependencies>
-  <!-- JUnit 5 -->
-  <dependency>
-    <groupId>org.junit.jupiter</groupId>
-    <artifactId>junit-jupiter</artifactId>
-    <version>5.10.0</version>
-    <scope>test</scope>
-  </dependency>
-</dependencies>
-
+  <dependencies>
+    <!-- JUnit 5 -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>5.10.0</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
 
   <build>
     <plugins>
@@ -39,7 +37,6 @@
         </configuration>
       </plugin>
 
-
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
@@ -53,7 +50,15 @@
             </goals>
           </execution>
         </executions>
+        <configuration>
+          <!-- Ścieżka do własnego pliku checkstyle.xml -->
+          <configLocation>checkstyle.xml</configLocation>
+          <encoding>UTF-8</encoding>
+          <consoleOutput>true</consoleOutput>
+          <failsOnError>true</failsOnError>
+        </configuration>
       </plugin>
+
     </plugins>
   </build>
 
