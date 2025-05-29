@@ -21,4 +21,4 @@ jobs:
         distribution: 'temurin' 
 
     - name: Build with Maven and Run Checkstyle
-      run: mvn clean install verify/////
+      run: mvn clean install verify
