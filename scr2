@@ -1,0 +1,23 @@
+public class SampleController {
+}
+package com.example;
+
+@RestController@~
+
+public class App {
+    public static void main(final String[] args) {
+        System.out.println("Hello, CI!");
+    }
+    @GetMapping("/test")
+    String someMethod()
+    {
+        return "testowy";
+
+    }
+    @Getmapping("/GetUserData")
+    UserData metoda1()
+    {
+        return new userData(userID: 1, imie:"jan", nazwisko "kowalski");
+    }
+}
+
